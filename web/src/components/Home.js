@@ -2,6 +2,7 @@ import "../styles/home.css";
 import Header from "./Header";
 import Footer from "./Footer";
 const Home = (props) => {
+  console.log(props);
   //lifting carousel
   const handleCarousel = (ev) => {
     props.handleCarousel(ev);
@@ -63,7 +64,10 @@ const Home = (props) => {
   return (
     <>
       <body>
-        <Header />
+        <Header
+          searchShow={props.searchShow}
+          handleSearch={props.handleSearch}
+        />
         <main>{renderShows(props.gender)}</main>
         <Footer />
       </body>

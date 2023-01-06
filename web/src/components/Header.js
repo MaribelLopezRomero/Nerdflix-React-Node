@@ -1,7 +1,8 @@
 import logo from "../images/logo.png";
 import perfil from "../images/PerfilSF.png";
+import Search from "./Search";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between">
@@ -83,7 +84,12 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          <Search
+            searchShow={props.searchShow}
+            handleSearch={props.handleSearch}
+          />
         </ul>
+
         <div>
           <a href="Perfil.html">
             <img

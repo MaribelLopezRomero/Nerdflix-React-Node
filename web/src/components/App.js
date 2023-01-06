@@ -6,6 +6,7 @@ import apiMovies from "../services/api-movies.js";
 function App() {
   //ESTADOS
   const [shows, setShows] = useState([]);
+  const [searchShow, setSearchShow] = useState("");
 
   //Eventos. Lifting
 
@@ -48,6 +49,12 @@ function App() {
     }
   };
 
+  //busqueda
+
+  const handleSearch = (value) => {
+    setSearchShow(value);
+  };
+
   //UseEffects
 
   useEffect(() => {
@@ -76,6 +83,8 @@ function App() {
         shows={shows}
         handleCarousel={handleCarousel}
         gender={arrayGender}
+        searchShow={searchShow}
+        handleSearch={handleSearch}
       />
     </>
   );
