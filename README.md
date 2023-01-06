@@ -9,9 +9,12 @@ Aplicacion web hecha con React y Node y SQL, que **muestra por género** pelicul
 
 Se pueden añadir a **favoritos** la pelicula o serie que quieras y las guarda en la BBDD segun usuario logeado.
 
+
+
 Se puede **modificar** los datos de tu perfil en la BBDD
 
 ![perfil](https://user-images.githubusercontent.com/70584024/211049025-ff7d8690-ea56-41e7-be1b-4829eec78867.png)
 
 Tiene una pagina de **administrador** que permimte insertar peliculas y series en la BBDD.
 
+![administrador](https://user-images.githubusercontent.com/70584024/211050675-f2be11ad-58ee-4bc3-999d-d4e064079475.png)
